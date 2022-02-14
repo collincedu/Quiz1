@@ -24,21 +24,21 @@ import csv
 
 
 # create a file object to open the file in read mode
-
+student_gpa = open("students.csv", 'r')
 
 
 # create a csv object from the file object
-
+reader = csv.reader(student_gpa, delimiter = ',')
 
 #skip the header row
-
+next()
 
 #create an outfile object for the pocessed record
-
+outfile = open("processedStudents.csv", "a")
 
 
 #create a new dictionary named 'student_dict'
-
+student_dict = {
 
 
 #use a loop to iterate through each row of the file
